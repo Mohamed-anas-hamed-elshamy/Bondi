@@ -1,0 +1,266 @@
+*:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start Section navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded=true] {
+    border-color: var(--green-color);
+}
+
+.navbar .collapse .nav-item a {
+    color: white;
+}
+
+.navbar .collapse .nav-item a:hover,
+.navbar .collapse .nav-item a.active {
+    color: var(--green-color);
+}
+
+.navbar .collapse .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .collapse .search svg {
+    color: var(--green-color);
+}
+
+/* End Section navbar */
+
+/* Start Section Landing */
+.landing-page {
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+
+/* End Section Landing */
+
+/* Start Section Feature */
+.main-header::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .icon-holder {
+    height: 200px;
+}
+
+.feature .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feature .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.feature .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.feature .feat h4 {
+    color: var(--yellow-color);
+}
+
+/* End Section Feature */
+
+/* Start Section Our work */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+}
+
+.our-work ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+
+.our-work ul li.active:hover {
+    color: var(--yellow-color);
+}
+
+.our-work ul li:hover {
+    color: var(--red-color);
+}
+
+.our-work .row .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .row .box::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    top: -100%;
+    right: -100%;
+    transform: scale(0) rotate(-360deg);
+}
+
+.our-work .row .box:hover::before {
+    top: 5px;
+    right: 5px;
+    transform: scale(1);
+}
+
+/* End Section Our work */
+
+/* Start Section Stuff */
+.stuff .description {
+    max-width: 500px;
+}
+
+/* End Section Stuff */
+
+/* Start Section Team */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .row .box h4 {
+    background-color: var(--green-color);
+    color: var(--yellow-color);
+    position: S;
+}
+
+
+/* End Section Team */
+
+/* Start Section Project */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* End Section Project */
+
+/* Start Section Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.subscribe input[type="text"]:focus-within {
+    outline: none;
+    /* background-color: red; */
+}
+
+.subscribe input[type="text"]::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* End Section Subscribe */
+
+/* Start Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer .create-info div>span {
+    /* background-color: red; */
+    color: var(--green-color);
+}
+
+.footer .create-info div div span {
+    color: var(--yellow-color);
+}
+
+.footer .contact-us ul li {}
+
+.footer .contact-us ul li a svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .contact-us ul li a .facebook {
+    background-color: #1877f2;
+}
+
+.footer .contact-us ul li a .github {
+    background-color: black;
+}
+
+.footer .contact-us ul li a .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .contact-us ul li a .freelancer {
+    width: 36px;
+    height: 36px;
+    background-color: #007fed;
+    padding: 6px 4px 4px 7px;
+}
+
+/* End Footer */
+
+/* Start Component */
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+/* End Component */
